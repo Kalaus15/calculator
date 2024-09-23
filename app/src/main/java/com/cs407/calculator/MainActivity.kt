@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
             val number2 = findViewById<EditText>(R.id.number2).text.toString().toInt()
             val intent = Intent(this, ResultDisplay::class.java)
             if (number2 == 0){
-                intent.putExtra("EXTRA", "Divide by Zero Error")
+                intent.putExtra("EXTRA_ERROR", "Divide by Zero Error")
                 startActivity(intent)
             }
             else {
